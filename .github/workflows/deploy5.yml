@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy-5
 
 on:  
   workflow_dispatch:
@@ -25,7 +25,7 @@ jobs:
       - name: Install python dependencies
         run: pip install -r requirements.txt
       - name: Run Script
-        run: timeout 7200 python MicrosoftRewardsBot.py --accounts ${{ secrets.ACCOUNTS }} --headless --fast --privacy
+        run: timeout 7200 python MicrosoftRewardsBot.py --accounts ${{ secrets.ACCOUNTS5 }} --headless --fast --privacy
       - name: Retry
         if: ${{ failure() }}
-        run: timeout 1800 python MicrosoftRewardsBot.py --accounts ${{ secrets.ACCOUNTS }} --headless --fast --privacy
+        run: timeout 1800 python MicrosoftRewardsBot.py --accounts ${{ secrets.ACCOUNTS5 }} --headless --fast --privacy
