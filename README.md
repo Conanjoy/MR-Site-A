@@ -1,7 +1,11 @@
 # Microsoft Rewards Bot
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](LICENSE)
+<<<<<<< HEAD
 [![Version](https://img.shields.io/badge/version-v0.1-blue.svg?style=flat)](#)
+=======
+[![Version](https://img.shields.io/badge/version-v2.0-blue.svg?style=flat)](#)
+>>>>>>> upstream/main
 
 An automated solution for earning daily Microsoft Rewards points using Python and Selenium.
 
@@ -67,6 +71,7 @@ pip install -r requirements.txt
     - `--redeem` Enable auto-redeem rewards based on accounts.json goals.
   - If you run the script normally it asks you for input instead.
 
+<<<<<<< HEAD
 ### Using Github Actions
 
 - Fork the repo.
@@ -80,6 +85,8 @@ pip install -r requirements.txt
 
 - Go to `Actions`>`Deploy` and run the workflow.
 
+=======
+>>>>>>> upstream/main
 ## Features
 
 - Bing searches (Desktop, Mobile and Edge) with User-Agents.
@@ -106,7 +113,10 @@ pip install -r requirements.txt
 
 - Don't use outlook mail with Microsoft Rewards. They are more likely to get banned.
 - Don't run the script with more than six accounts per IP.
+<<<<<<< HEAD
 - If you are using Github Actions then split accounts across multiple repositories/forks or use proxies.
+=======
+>>>>>>> upstream/main
 
 ## Troubleshooting
 
