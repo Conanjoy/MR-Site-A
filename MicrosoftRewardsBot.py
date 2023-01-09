@@ -1502,22 +1502,13 @@ def redeem(browser, goal):
                 By.XPATH,
                 value="/html/body/div[1]/div[2]/main/div/ui-view/mee-rewards-dashboard/main/div/mee-rewards-redeem-info-card/div/mee-card-group/div/div[1]/mee-card/div/card-content/mee-rewards-redeem-goal-card/div/div[2]/div/a[1]/span/ng-transclude",
             ).click()
-<<<<<<< HEAD
-            time.sleep(random.uniform(2, 4))
-        except:
-            time.sleep(random.uniform(3, 5))
-=======
             time.sleep(random.uniform(5, 7))
         except:
->>>>>>> upstream/main
             browser.find_element(
                 By.XPATH,
                 value="/html/body/div[1]/div[2]/main/div/ui-view/mee-rewards-dashboard/main/div/mee-rewards-redeem-info-card/div/mee-card-group/div/div[1]/mee-card/div/card-content/mee-rewards-redeem-goal-card/div/div[2]/div/a[1]",
             ).click()
-<<<<<<< HEAD
-=======
             time.sleep(random.uniform(5, 7))
->>>>>>> upstream/main
         try:
             url = browser.current_url
             url = url.split("/")
@@ -1526,17 +1517,11 @@ def redeem(browser, goal):
                 browser.find_element(
                     By.XPATH, value=f'//*[@id="redeem-pdp_{id}"]'
                 ).click()
-<<<<<<< HEAD
-                time.sleep(random.uniform(3, 5))
-=======
                 time.sleep(random.uniform(5, 7))
->>>>>>> upstream/main
             except:
                 browser.find_element(
                     By.XPATH, value=f'//*[@id="redeem-pdp_{id}"]/span[1]'
                 ).click()
-<<<<<<< HEAD
-=======
                 
             # If a cookie consent container is present, we need to accept
             # those cookies to be able to redeem the reward
@@ -1546,16 +1531,11 @@ def redeem(browser, goal):
                 ).click()
                 time.sleep(random.uniform(2, 4))
             
->>>>>>> upstream/main
             try:
                 browser.find_element(
                     By.XPATH, value='//*[@id="redeem-checkout-review-confirm"]'
                 ).click()
-<<<<<<< HEAD
-                time.sleep(random.uniform(3, 5))
-=======
                 time.sleep(random.uniform(2, 4))
->>>>>>> upstream/main
             except:
                 browser.find_element(
                     By.XPATH, value='//*[@id="redeem-checkout-review-confirm"]/span[1]'
@@ -1581,11 +1561,7 @@ def redeem(browser, goal):
         except:
             pass
         finally:
-<<<<<<< HEAD
-            time.sleep(random.uniform(5, 10))
-=======
             time.sleep(random.uniform(2, 4))
->>>>>>> upstream/main
         try:
             error = browser.find_element(
                 By.XPATH, value='//*[@id="productCheckoutError"]/div/div[1]'
@@ -1689,12 +1665,8 @@ def farmer():
                             '[REEDEM] Goal has not been defined for this account, defaulting to Amazon Giftcard...'
                         )
                         goal = 'Amazon'
-<<<<<<< HEAD
-                        redeem(browser, goal)
-=======
                     
                     redeem(browser, goal)
->>>>>>> upstream/main
                 browser.quit()
 
             if MOBILE:

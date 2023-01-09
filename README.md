@@ -1,11 +1,7 @@
 # Microsoft Rewards Bot
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](LICENSE)
-<<<<<<< HEAD
-[![Version](https://img.shields.io/badge/version-v0.1-blue.svg?style=flat)](#)
-=======
 [![Version](https://img.shields.io/badge/version-v2.0-blue.svg?style=flat)](#)
->>>>>>> upstream/main
 
 An automated solution for earning daily Microsoft Rewards points using Python and Selenium.
 
@@ -71,22 +67,6 @@ pip install -r requirements.txt
     - `--redeem` Enable auto-redeem rewards based on accounts.json goals.
   - If you run the script normally it asks you for input instead.
 
-<<<<<<< HEAD
-### Using Github Actions
-
-- Fork the repo.
-- Go to `Settings`>`Secrets`>`Actions` and add `New repository secret` named `ACCOUNTS` where the value will be `Your Email:Your Password`.
-- To specify the time and frequency the script runs using Github Actions, the script default is daily at 10:00 am UTC
-
-  - Go to `Actions` > `Deploy` > `deploy.yml` and select edit (i.e., pencil icon)
-  - Line 6 `-cron:` determines when the script runs. Github cron uses UTC timezone by default,
-  - Be sure to customize cron to run once daily for your local timezone, converted to UTC time. For example, `cron: '0 10 * * *' # every day at 6:00 am EST, 10:00 am UTC` is provided by default.
-  - Visit [https://crontab.guru](https://crontab.guru/) for details how to customize cron
-
-- Go to `Actions`>`Deploy` and run the workflow.
-
-=======
->>>>>>> upstream/main
 ## Features
 
 - Bing searches (Desktop, Mobile and Edge) with User-Agents.
@@ -113,10 +93,6 @@ pip install -r requirements.txt
 
 - Don't use outlook mail with Microsoft Rewards. They are more likely to get banned.
 - Don't run the script with more than six accounts per IP.
-<<<<<<< HEAD
-- If you are using Github Actions then split accounts across multiple repositories/forks or use proxies.
-=======
->>>>>>> upstream/main
 
 ## Troubleshooting
 
